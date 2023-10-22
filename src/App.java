@@ -21,6 +21,9 @@ public class App {
         setupCrafting((ItemCraftPage) manager.findPage("Item Crafting"), player);
         setupUncrafting((ProductPage) manager.findPage("Product Page"), player);
 
+        // Register the player as an observer of the storage
+        storage.registerObserver(player);
+
         // Window creation
         manager.refresh();
         frame = new JFrame();

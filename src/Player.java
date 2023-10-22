@@ -1,4 +1,4 @@
-public class Player {
+public class Player implements Observer {
     private String name;
     private Inventory inventory;
     private double carryWeightCapacity;
@@ -56,5 +56,10 @@ public class Player {
         }
         inventory.addOne(storage.retrieve(item));
     }
-    
+
+     // Implement the update method from the Observer interface
+    @Override
+    public void update(String storageName, Inventory items) {
+        System.out.println(name + ", " + storageName + " got updated!");
+    }
 }

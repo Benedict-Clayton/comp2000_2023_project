@@ -52,12 +52,12 @@ Size guide: 40 to 80 lines of code.
 ### Option 2: Observer Pattern - Storage Updates
 In the future the inventory system might be put to work in a multi-player game. In this scenario, multiple players may have access to the same Storage box where the Observer (aka Pub-Sub) might prove useful. For this to work smoothly, each player should have their own copy of Storage to work with. Whenever an update happens to the storage (such as storing or retreiving a new item), all players be updated about the new stock of the Inventory.
 
-In the provided starting code, the player is given a reference to the instance of storage in the constructor of `App.java`. Apply the observer pattern such that the player is a subscriber/observer of the storage. 
+In the provided starting code, the player is given a reference to the instance of storage in the constructor of `App.java`. Apply the observer pattern such that the player is a subscriber/observer of the storage.
 
 Size guide: 20 to 50 lines of code
 
 ## Task 2 - Structural
-LART Studios has noticed the booming popularity of a particular mining and crafitng game, and wishes to cash in on this idea. To do so, items are broken into two categories, base items and craftable items.  
+LART Studios has noticed the booming popularity of a particular mining and crafting game, and wishes to cash in on this idea. To do so, items are broken into two categories, base items and craftable items.  
 
 * Base items exist on their own and have their own weight.  
 * Craftable items are made up of other craftable items and/or base items, and have the weight be the sum of all items which make up the craftable item.
